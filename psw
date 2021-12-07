@@ -1,0 +1,17 @@
+password = '123456'
+pwd = input('enter your password:')
+i = 3
+while i > 0:
+    if pwd == password:
+        print('logging sucessed')
+        break
+    else:
+        i = i-1
+        if i == 2:
+            print('wrong password, last', i, 'chances')
+            pwd = input('enter your password:')    
+        elif i == 1:
+            print('wrong password, last', i, 'chance')
+            pwd = input('enter your password:')
+        else:
+            print('logging failed')
